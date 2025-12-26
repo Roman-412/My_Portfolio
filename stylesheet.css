@@ -150,7 +150,7 @@ section { min-height: 100vh; padding: 10rem 9% 2rem; }
 }
 
 .about-text h2 span {
-    color: #0ef;
+    color: #c026d3;
 }
 
 .about-text h4 {
@@ -167,173 +167,40 @@ section { min-height: 100vh; padding: 10rem 9% 2rem; }
     line-height: 1.4;
     margin-bottom: 4rem;
 }
-.sub-title { text-align: center; font-size: 60px; padding-top: 20px; }
-.sub-title span { color: var(--main-color); }
+.skills { background: var(--second-bg-color); }
+.skills-row { display: flex; flex-wrap: wrap; gap: 5rem; }
+.skills-column { flex: 1 1 40rem; }
+.title { font-size: 2.5rem; margin: 0 0 1.5rem; }
+.skills-box { border: .2rem solid var(--main-color); border-radius: .6rem; padding: 1.5rem; }
 
-.skills { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; }
-.container1 {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 40px; border-radius: 20px; width: 500px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+.progress { padding: 1rem 0; }
+.progress h3 { font-size: 1.7rem; display: flex; justify-content: space-between; }
+.progress .bar { height: 1.2rem; border-radius: .6rem; background: #000; margin-top: .5rem; position: relative; }
+.progress .bar span { height: 100%; border-radius: .6rem; background: var(--main-color); position: absolute; }
+
+.projects { background: var(--bg-color); }
+.project-container { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
+.project-box { position: relative; border-radius: 2rem; box-shadow: 0 0 1rem var(--second-bg-color); overflow: hidden; display: flex; }
+.project-box img { width: 100%; transition: .5s ease; }
+.project-box:hover img { transform: scale(1.1); }
+.project-layer {
+    position: absolute; bottom: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(rgba(0,0,0,.1), var(--main-color));
+    display: flex; justify-content: center; align-items: center;
+    flex-direction: column; text-align: center; padding: 0 4rem;
+    transform: translateY(100%); transition: .5s ease;
 }
-
-.progress-line {
-    position: relative; width: 100%; height: 5px; background: #000;
-    border-radius: 10px; margin: 20px 0;
+.project-box:hover .project-layer { transform: translateY(0); }
+.project-layer h4 { font-size: 2.5rem; }
+.project-layer p { font-size: 1.1rem; margin: .3rem 0 1rem; }
+.project-layer a {
+    display: inline-flex; justify-content: center; align-items: center;
+    width: 4rem; height: 4rem; background: var(--text-color); border-radius: 50%;
 }
-
-.progress-line span {
-    height: 100%; background: var(--main-color);
-    position: absolute; border-radius: 10px;
-    transform: scaleX(0); transform-origin: left;
-    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
-}
-
-@keyframes animate { 100% { transform: scaleX(1); } }
-
-.progress-line.html span { width: 90%; }
-.progress-line.CSS span { width: 95%; }
-.progress-line.JS span { width: 85%; }
-.progress-line.creativity span { width: 80%; }
-.progress-line.communication span { width: 90%; }
-.progress-line.problemsolving span { width: 85%; }
-
-
-.progress-line span::after {
-    position: absolute;
-    padding: 1px 8px;
-    background-color: #000;
-    color: #fff;
-    font-size: 12px;
-    border-radius: 3px;
-    top: -28px;
-    right: -20px;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-}
-
-.progress-line.html span::after { content: "90%"; }
-.progress-line.CSS span::after { content: "95%"; }
-.progress-line.JS span::after { content: "85%"; }
-.progress-line.PYTHON span::after { content: "80%"; }
-.progress-line.SQL span::after { content: "75%"; }
+.project-layer a i { font-size: 2rem; color: var(--second-bg-color); }
 
 
 
-.progress-line.Creativity span::after { content: "80%"; }
-.progress-line.Communication span::after { content: "65%"; }
-.progress-line.CriticalThinking span::after { content: "85%"; }
-.progress-line.ProblemSolving span::after { content: "80%"; }
-.progress-line.Teamwork span::after { content: "75%"; }
-
-
-.radial-bars .radial-bar svg { width: 120px; height: 160px; transform: rotate(-90deg); }
-.radial-bars .radial-bar .progress-bar {
-    stroke-width: 10; stroke: black; fill: transparent;
-    stroke-dasharray: 502; stroke-dashoffset: 502; stroke-linecap: round;
-    animation: animate-bar 1s linear forwards;
-}
-
-.radial-bars .radial-bar .path {
-    stroke-width: 10; stroke: #0ef; fill: transparent;
-    stroke-dasharray: 502; stroke-dashoffset: 502; stroke-linecap: round;
-}
-
-/* Individual Animations */
-.path-1 { animation: animate-path1 1s 1.5s linear forwards; }
-.path-2 { animation: animate-path2 1s 1.5s linear forwards; }
-
-@keyframes animate-path1 { 100% { stroke-dashoffset: 50; } } /* 90% */
-@keyframes animate-path2 { 100% { stroke-dashoffset: 175; } } /* 65% */
-
-@keyframes animate-bar { 100% { stroke-dashoffset: 0; } }
-@keyframes animate { 100% { transform: scaleX(1); } }
-@keyframes showText { 100% { opacity: 1; } }
-
-.main-text {
-    padding-top: 160px;
-    margin-top: 200px;
-    margin-bottom: 100px;
-}
-
-.main-text h2 {
-    font-size: 60px;
-    line-height: 1;
-    text-align: center;
-}
-
-.main-text h2 span {
-    color: #0ef;
-}
-
-.portfolio-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(359px, auto));
-}
-
-.row {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.row img {
-    width: 85%;
-    border-radius: 8px;
-    transition: transform 0.5s;
-    margin-left: 50px;
-}
-.row:hover img{
-    transform: scale(1.1);
-}
-.layer {
-    width: 92%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.1), #0ef);
-    position: absolute;
-    border-radius: 8px;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    padding: 0 40px;
-    margin-left: 40px;
-    transition: height 0.5s;
-}
-.row:hover .layer {
-    height: 100%;
-}
-
-.layer h5 {
-    color:white;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.layer p {
-    color: white;
-    font-size: 1rem;
-    line-height: 1.8;
-}
-
-.layer i {
-    color: #ff004f;
-    margin-top: 20px;
-    font-size: 20px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
 .contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
