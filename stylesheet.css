@@ -200,6 +200,11 @@ section {
     line-height: 1.4;
     margin-bottom: 4rem;
 }
+.heading{
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
 
 .skills {
     background: var(--second-bg-color);
@@ -268,6 +273,7 @@ section {
     overflow: hidden;
     display: flex;
 }
+
 
 .project-box img {
     width: 100%;
