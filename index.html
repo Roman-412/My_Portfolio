@@ -4,201 +4,621 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Ranjith Kumar</title>
+    <meta name="description" content="Portfolio of Ranjith Kumar - Full Stack Web Developer specializing in Python, FastAPI, JavaScript, React, and modern UI design.">
+    <title>Ranjith Kumar | Full Stack Developer Portfolio</title>
+    
+    <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="stylesheet.css">
+    
+    <!-- Typed.js -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 
 <body>
 
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="aboutme.html">About</a>
-            <a href="#skills">Skill</a>
-            <a href="#project">Projects</a>
-            <a href="#contact">Contact Me</a>
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <div class="logo-container">
+            <a href="#home" class="logo">
+                <i class='bx bx-code-curly' style="color: var(--accent-cyan); font-size: 1.6rem;"></i>
+                Ranjith<span>.dev</span>
+            </a>
+            <span class="status-badge">
+                <span class="status-dot"></span> Available for Hire
+            </span>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#project" class="nav-link">Projects</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="aboutme.html" class="nav-cta">More About Me</a>
         </nav>
+
+        <button class="menu-icon" id="menu-icon" aria-label="Toggle navigation menu">
+            <i class='bx bx-menu'></i>
+        </button>
     </header>
 
+    <!-- Hero Section -->
     <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Ranjith Kumar</h1>
-            <h3>And I'm a <span class="text"></span></h3>
+        <div class="home-content reveal">
+            <div class="badge-intro">
+                <i class='bx bx-terminal'></i> Full Stack Developer
+            </div>
+            
+            <h1>Hello, I'm <br><span class="gradient-text">Ranjith Kumar</span></h1>
+            
+            <div class="role-title">
+                <span>Specialized in</span>
+                <span class="text"></span>
+            </div>
+
+            <p class="home-bio">
+                Passionate Full Stack Web Developer based in India, currently training at Freshworks Academy. 
+                Dedicated to crafting modern, scalable, and high-performance digital products from interactive frontends to robust backend architectures.
+            </p>
+
+            <div class="home-btn-group">
+                <a href="#project" class="btn-primary">
+                    <i class='bx bx-grid-alt'></i> View My Work
+                </a>
+                <a href="#contact" class="btn-secondary">
+                    <i class='bx bx-paper-plane'></i> Let's Talk
+                </a>
+                <a href="aboutme.html" class="btn-secondary">
+                    <i class='bx bx-user-circle'></i> About Me
+                </a>
+            </div>
 
             <div class="home-sci">
-                <a href="https://github.com/Roman-412"><i class='bx bxl-github'></i></a>
-                <a href="https://x.com/RanjithKum16651"><i class='bx bxl-twitter'></i></a>
-                <a href="https://wa.me/916383006673"><i class='bx bxl-whatsapp'></i></a>
-                <a href="https://www.linkedin.com/in/ranjithkumar-durai-a11318395/"><i class='bx bxl-linkedin'></i></a>
-
+                <span class="sci-label">// CONNECT</span>
+                <a href="https://github.com/Roman-412" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ranjithkumar-durai-a11318395/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="https://wa.me/916383006673" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Contact">
+                    <i class='bx bxl-whatsapp'></i>
+                </a>
+                <a href="https://x.com/RanjithKum16651" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile">
+                    <i class='bx bxl-twitter'></i>
+                </a>
             </div>
-
-            <a href="aboutme.html" class="btn-box">More About Me</a>
         </div>
 
-        <div class="home-img">
-            <div class="glowing-circle">
-                <div class="image-box">
-                    <img src="./salack dp.jpg" alt="myimg">
+        <div class="home-img-wrapper reveal">
+            <div class="avatar-container">
+                <div class="avatar-inner">
+                    <img src="./salack dp.jpg" alt="Ranjith Kumar - Full Stack Developer">
                 </div>
+            </div>
+
+            <!-- Floating Tech Badges -->
+            <div class="floating-chip chip-1">
+                <i class='bx bxl-react'></i>
+                <span>React & JavaScript</span>
+            </div>
+            <div class="floating-chip chip-2">
+                <i class='bx bxl-python'></i>
+                <span>Python & FastAPI</span>
+            </div>
+            <div class="floating-chip chip-3">
+                <i class='bx bxl-postgresql'></i>
+                <span>PostgreSQL & SQL</span>
             </div>
         </div>
     </section>
-   
+
+    <!-- Skills Section -->
     <section class="skills" id="skills">
-        <h2 class="heading">My <span>Skills</span></h2>
-        <div class="skills-row">
-            <div class="skills-column">
-                <h3 class="title">Technical</h3>
-                <div class="skills-box">
-                    <div class="progress">
-                        <h3>HTML <span>60%</span></h3>
-                        <div class="bar"><span style="width:60%"></span></div>
+        <div class="reveal">
+            <span class="heading-sub">// TECHNICAL EXPERTISE</span>
+            <h2 class="heading">Core <span>Skills & Stack</span></h2>
+        </div>
+
+        <div class="skills-grid">
+            <!-- Frontend Development -->
+            <div class="skill-category-card reveal">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class='bx bx-code-alt'></i>
                     </div>
-                    <div class="progress">
-                        <h3>CSS <span>60%</span></h3>
-                        <div class="bar"><span style="width:60%"></span></div>
+                    <div>
+                        <h3 class="category-title">Frontend Development</h3>
                     </div>
-                    <div class="progress">
-                        <h3>SQL <span>50%</span></h3>
-                        <div class="bar"><span style="width:50%"></span></div>
+                </div>
+
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class='bx bxl-html5'></i> HTML5</span>
+                            <span class="skill-percent">60%</span>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" data-progress="60%"></div>
+                        </div>
                     </div>
-                    <div class="progress">
-                        <h3>Python <span>60%</span></h3>
-                        <div class="bar"><span style="width:60%"></span></div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class='bx bxl-css3'></i> CSS3 / Modern UI</span>
+                            <span class="skill-percent">60%</span>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" data-progress="60%"></div>
+                        </div>
                     </div>
-                    <div class="progress">
-                        <h3>JavaScript <span>40%</span></h3>
-                        <div class="bar"><span style="width:40%"></span></div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class='bx bxl-javascript'></i> JavaScript (ES6+)</span>
+                            <span class="skill-percent">40%</span>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" data-progress="40%"></div>
+                        </div>
                     </div>
-                    <div class="progress">
-                        <h3>FastAPI <span>50%</span></h3>
-                        <div class="bar"><span style="width:50%"></span></div>
-                    </div>
-                     <div class="progress">
-                        <h3>React.js <span>35%</span></h3>
-                        <div class="bar"><span style="width:35%"></span></div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class='bx bxl-react'></i> React.js</span>
+                            <span class="skill-percent">35%</span>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" data-progress="35%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="skills-column">
-                <h3 class="title">Professional</h3>
-                <div class="skills-box">
-                    <div class="progress">
-                        <h3>Creativity <span>62%</span></h3>
-                        <div class="bar"><span style="width:62%"></span></div>
+
+            <!-- Backend Development -->
+            <div class="skill-category-card reveal">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class='bx bx-server'></i>
                     </div>
-                    <div class="progress">
-                        <h3>Teamwork <span>70%</span></h3>
-                        <div class="bar"><span style="width:70%"></span></div>
+                    <div>
+                        <h3 class="category-title">Backend & APIs</h3>
                     </div>
-                    <div class="progress">
-                        <h3>Problem Solving <span>65%</span></h3>
-                        <div class="bar"><span style="width:65%"></span></div>
+                </div>
+
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class='bx bxl-python'></i> Python</span>
+                            <span class="skill-percent">60%</span>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" data-progress="60%"></div>
+                        </div>
                     </div>
-                    <div class="progress">
-                        <h3>Communication <span>30%</span></h3>
-                        <div class="bar"><span style="width:30%"></span></div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class='bx bx-bolt-circle'></i> FastAPI</span>
+                            <span class="skill-percent">50%</span>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" data-progress="50%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class='bx bx-data'></i> SQL Database</span>
+                            <span class="skill-percent">50%</span>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" data-progress="50%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class='bx bxl-postgresql'></i> PostgreSQL & PGAdmin</span>
+                            <span class="skill-percent">67%</span>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" data-progress="67%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="skills-column">
-                <h3 class="title">Tools</h3>
-                <div class="skills-box">
-                    <div class="progress">
-                        <h3>Figma <span>65%</span></h3>
-                        <div class="bar"><span style="width:65%"></span></div>
+
+            <!-- Tools & Workflow -->
+            <div class="skill-category-card reveal">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class='bx bx-wrench'></i>
                     </div>
-                    <div class="progress">
-                        <h3>VS Code <span>90%</span></h3>
-                        <div class="bar"><span style="width:90%"></span></div>
+                    <div>
+                        <h3 class="category-title">Developer Tools</h3>
                     </div>
-                    <div class="progress">
-                        <h3>Git <span>75%</span></h3>
-                        <div class="bar"><span style="width:75%"></span></div>
+                </div>
+
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class='bx bx-code-block'></i> VS Code</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" data-progress="90%"></div>
+                        </div>
                     </div>
-                     <div class="progress">
-                        <h3>PG Admin <span>67%</span></h3>
-                        <div class="bar"><span style="width:67%"></span></div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class='bx bxl-git'></i> Git & GitHub</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" data-progress="75%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class='bx bxl-figma'></i> Figma (UI/UX)</span>
+                            <span class="skill-percent">65%</span>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" data-progress="65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional & Soft Skills -->
+            <div class="skill-category-card reveal">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class='bx bx-bulb'></i>
+                    </div>
+                    <div>
+                        <h3 class="category-title">Core Strengths</h3>
+                    </div>
+                </div>
+
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class='bx bx-group'></i> Teamwork & Collaboration</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" data-progress="70%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class='bx bx-brain'></i> Problem Solving</span>
+                            <span class="skill-percent">65%</span>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" data-progress="65%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class='bx bx-palette'></i> Creativity & Design Sense</span>
+                            <span class="skill-percent">62%</span>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" data-progress="62%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class='bx bx-conversation'></i> Communication</span>
+                            <span class="skill-percent">30%</span>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" data-progress="30%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Projects Section -->
     <section class="projects" id="project">
-        <h2 class="heading">Latest <span>Projects</span></h2>
-        <div class="project-container">
-            <div class="project-box">
-                <img src="./Screenshot 2026-01-09 090104.png" alt="DaysCounter Project">
-                <div class="project-layer">
-                    <h4>DaysCounter</h4>
-                    <p>A countdown timer dashboard for tracking exam schedules and study goals.</p>
-                    <a href="http://www.examdayscounter.work.gd/"><i class='bx bx-link-external'></i></a>
+        <div class="reveal">
+            <span class="heading-sub">// RECENT CREATIONS</span>
+            <h2 class="heading">Featured <span>Projects</span></h2>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1: DaysCounter -->
+            <div class="project-card reveal">
+                <div class="project-img-box">
+                    <img src="./Screenshot 2026-01-09 090104.png" alt="DaysCounter Project Preview">
+                    <span class="project-badge-top">Productivity Tool</span>
+                </div>
+                <div class="project-content">
+                    <div>
+                        <div class="project-header-row">
+                            <h3 class="project-title">DaysCounter</h3>
+                        </div>
+                        <p class="project-desc">
+                            A countdown timer dashboard designed for students and professionals to track exam schedules, milestones, and daily study targets with precision.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Dashboard</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="http://www.examdayscounter.work.gd/" target="_blank" rel="noopener noreferrer" class="btn-project live">
+                            <i class='bx bx-link-external'></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Roman-412" target="_blank" rel="noopener noreferrer" class="btn-project code">
+                            <i class='bx bxl-github'></i> Code
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="project-box">
-                <img src="./Screenshot 2025-12-26 111516.png" alt="">
-                <div class="project-layer">
-                    <h4>Suavi Mika Samayal</h4>
-                    <p>A sophisticated UI/UX design project focused on modern culinary experiences.</p>
-                    <a href="https://roman-412.github.io/suavi_mika_samayal/"><i class='bx bx-link-external'></i></a>
+            <!-- Project 2: Suavi Mika Samayal -->
+            <div class="project-card reveal">
+                <div class="project-img-box">
+                    <img src="./Screenshot 2025-12-26 111516.png" alt="Suavi Mika Samayal Project Preview">
+                    <span class="project-badge-top">Culinary UI/UX</span>
+                </div>
+                <div class="project-content">
+                    <div>
+                        <div class="project-header-row">
+                            <h3 class="project-title">Suavi Mika Samayal</h3>
+                        </div>
+                        <p class="project-desc">
+                            A sophisticated UI/UX web application focused on modern culinary experiences, rich recipe presentations, and responsive food navigation.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tech-tag">UI/UX</span>
+                            <span class="tech-tag">CSS Grid</span>
+                            <span class="tech-tag">Responsive Design</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://roman-412.github.io/suavi_mika_samayal/" target="_blank" rel="noopener noreferrer" class="btn-project live">
+                            <i class='bx bx-link-external'></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Roman-412/suavi_mika_samayal" target="_blank" rel="noopener noreferrer" class="btn-project code">
+                            <i class='bx bxl-github'></i> Code
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="project-box">
-                <img src="./image.png" alt="">
-                <div class="project-layer">
-                    <h4>Local Eats</h4>
-                    <p>Connecting local food lovers with the best hidden gems in the city.</p>
-                    <a href="https://incandescent-vacherin-9cf76d.netlify.app/"><i class='bx bx-link-external'></i></a>
+            <!-- Project 3: Local Eats -->
+            <div class="project-card reveal">
+                <div class="project-img-box">
+                    <img src="./image.png" alt="Local Eats Project Preview">
+                    <span class="project-badge-top">Food Discovery</span>
+                </div>
+                <div class="project-content">
+                    <div>
+                        <div class="project-header-row">
+                            <h3 class="project-title">Local Eats</h3>
+                        </div>
+                        <p class="project-desc">
+                            Connecting local food enthusiasts with hidden culinary gems and popular eateries across the city with interactive browsing and clean layout.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tech-tag">Web App</span>
+                            <span class="tech-tag">Frontend</span>
+                            <span class="tech-tag">Netlify</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://incandescent-vacherin-9cf76d.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-project live">
+                            <i class='bx bx-link-external'></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Roman-412" target="_blank" rel="noopener noreferrer" class="btn-project code">
+                            <i class='bx bxl-github'></i> Code
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="project-box">
-                <img src="./Music_player.png" alt="">
-                <div class="project-layer">
-                    <h4>Music Player</h4>
-                    <p>A responsive music player with playlist and playback controls.</p>
-                    <a href="https://roman-412.github.io/Music_Player/"><i class='bx bx-link-external'></i></a>
+
+            <!-- Project 4: Music Player -->
+            <div class="project-card reveal">
+                <div class="project-img-box">
+                    <img src="./Music_player.png" alt="Music Player Project Preview">
+                    <span class="project-badge-top">Audio Application</span>
+                </div>
+                <div class="project-content">
+                    <div>
+                        <div class="project-header-row">
+                            <h3 class="project-title">Music Player</h3>
+                        </div>
+                        <p class="project-desc">
+                            A sleek, responsive audio playback web application featuring custom playlist management, audio progress scrubbing, and smooth interactive controls.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tech-tag">Audio API</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Modern UI</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://roman-412.github.io/Music_Player/" target="_blank" rel="noopener noreferrer" class="btn-project live">
+                            <i class='bx bx-link-external'></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Roman-412/Music_Player" target="_blank" rel="noopener noreferrer" class="btn-project code">
+                            <i class='bx bxl-github'></i> Code
+                        </a>
+                    </div>
                 </div>
             </div>
+        </div>
     </section>
-    <section class="contact" id="contact">
-        <div class="contact-text">
-            <h2>Contact <span>Me</span></h2>
-            <h4>Let's work Together</h4>
-            <div class="contact-list">
-                <li><i class='bx bxs-send'></i>romanranjee@gmail.com</li>
-                <li><i class='bx bxs-phone'></i>6383006673</li>
+
+    <!-- Experience & Education Timeline Section -->
+    <section class="timeline-section" id="education">
+        <div class="reveal">
+            <span class="heading-sub">// ACADEMIC & PROFESSIONAL JOURNEY</span>
+            <h2 class="heading">Education & <span>Training</span></h2>
+        </div>
+
+        <div class="timeline-container">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-period">Currently Pursuing</span>
+                    <h3 class="timeline-title">Full Stack Web Development</h3>
+                    <div class="timeline-institution">
+                        <i class='bx bx-buildings'></i> Freshworks Academy
+                    </div>
+                    <p class="timeline-desc">
+                        Undergoing intensive hands-on Full Stack training covering frontend development (HTML, CSS, JavaScript, React.js), backend systems (Python, FastAPI), and database integration with PostgreSQL. Working on real-world projects and full-cycle application architecture.
+                    </p>
+                </div>
             </div>
 
-            <div class="contact-icons">
-                <a href="https://github.com/Roman-412"><i class='bx bxl-github'></i></a>
-                <a href="https://x.com/RanjithKum16651"><i class='bx bxl-twitter'></i></a>
-                <a href="https://wa.me/916383006673"><i class='bx bxl-whatsapp'></i></a>
-                <a href="https://www.linkedin.com/in/ranjithkumar-durai-a11318395/"><i class='bx bxl-linkedin'></i></a>
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-period">Completed</span>
+                    <h3 class="timeline-title">Higher Secondary Education (12th Bio-Maths)</h3>
+                    <div class="timeline-institution">
+                        <i class='bx bx-book-open'></i> Government Higher Secondary School (GHSS)
+                    </div>
+                    <p class="timeline-desc">
+                        Achieved 90% in Tamil and 82% in Mathematics. Strengthened analytical thinking, logical problem solving, and disciplined study habits while actively exploring software and technology interests.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-period">Completed</span>
+                    <h3 class="timeline-title">Secondary School Leaving Certificate (10th)</h3>
+                    <div class="timeline-institution">
+                        <i class='bx bx-book-open'></i> Government Higher Secondary School (GHSS)
+                    </div>
+                    <p class="timeline-desc">
+                        Built strong academic fundamentals, discipline, consistency, and early curiosity regarding computers, internet technologies, and web software.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-info-panel reveal">
+            <div>
+                <span class="heading-sub">// GET IN TOUCH</span>
+                <h3>Let's Build Something <span class="gradient-text">Great Together</span></h3>
+            </div>
+            <p>
+                I'm actively seeking opportunities as a Full Stack Web Developer. Whether you have a project idea, a job inquiry, or just want to connect, feel free to reach out anytime!
+            </p>
+
+            <div class="contact-cards-list">
+                <a href="mailto:romanranjee@gmail.com" class="contact-method-card">
+                    <div class="contact-method-icon">
+                        <i class='bx bx-envelope'></i>
+                    </div>
+                    <div class="contact-method-text">
+                        <h5>Direct Email</h5>
+                        <p>romanranjee@gmail.com</p>
+                    </div>
+                </a>
+
+                <a href="tel:+916383006673" class="contact-method-card">
+                    <div class="contact-method-icon">
+                        <i class='bx bx-phone-call'></i>
+                    </div>
+                    <div class="contact-method-text">
+                        <h5>Call / Contact</h5>
+                        <p>+91 6383006673</p>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/916383006673" target="_blank" rel="noopener noreferrer" class="contact-method-card">
+                    <div class="contact-method-icon">
+                        <i class='bx bxl-whatsapp'></i>
+                    </div>
+                    <div class="contact-method-text">
+                        <h5>WhatsApp Chat</h5>
+                        <p>+91 6383006673</p>
+                    </div>
+                </a>
             </div>
         </div>
 
-        <div class="contact-form">
-            <form action="">
-                <input type="text" placeholder="Enter Your Name" required>
-                <input type="email" placeholder="Enter Your Email" required>
-                <input type="text" placeholder="Enter Your Subject">
-                <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message"></textarea>
-                <input type="submit" value="submit" class="send">
+        <div class="contact-form-wrapper reveal">
+            <form id="contactForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group full">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Project Collaboration / Opportunity" required>
+                    </div>
+                    <div class="form-group full">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Hi Ranjith, I'd like to discuss a project..." required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; font-size: 1rem; padding: 1rem;">
+                    <i class='bx bx-send'></i> Send Message
+                </button>
+                <div class="form-status" id="formStatus">
+                    Thank you! Your message has been sent successfully.
+                </div>
             </form>
         </div>
     </section>
-    <div class="last-text">
-        <p>Developed with love by Ranjith Kumar © 2025</p>
-    </div>
-    <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>© 2026 <strong>Ranjith Kumar</strong>. Crafted with precision & passion.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Projects</a>
+            <a href="#education">Education</a>
+            <a href="aboutme.html">About Me</a>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Scroll to top">
+        <i class='bx bx-chevron-up'></i>
+    </a>
+
+    <!-- Main Logic Script -->
     <script src="./index.js"></script>
 </body>
 

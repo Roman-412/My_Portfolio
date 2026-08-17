@@ -4,235 +4,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>More About Me - Ranjith Kumar</title>
+    <meta name="description" content="Discover more about Ranjith Kumar - Full Stack Developer, background, education, interests, and aspirations.">
+    <title>More About Me | Ranjith Kumar</title>
 
+    <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background: #081b29;
-            color: #ededed;
-        }
-
-        header {
-            padding: 20px;
-            text-align: center;
-            background: #0b2233;
-            box-shadow: 0 0 10px rgba(0, 238, 255, 0.2);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 28px;
-        }
-
-        header h1 span {
-            color: #0ef;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        .box {
-            background: #0b2233;
-            padding: 35px;
-            border-radius: 15px;
-            margin-bottom: 30px;
-            box-shadow: 0 0 15px rgba(0, 238, 255, 0.2);
-            transition: 0.3s ease;
-        }
-
-        .box:hover {
-            transform: translateY(-5px);
-        }
-
-        .box h2 {
-            color: #0ef;
-            margin-bottom: 20px;
-            font-size: 24px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .box h3 {
-            margin-top: 20px;
-            margin-bottom: 10px;
-            color: #ffffff;
-            font-size: 18px;
-        }
-
-        .box p {
-            line-height: 1.8;
-            color: #cfd8dc;
-            font-size: 16px;
-            text-align: justify;
-        }
-
-        .back-btn {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 10px 25px;
-            background: #0ef;
-            color: #081b29;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: 0.3s ease;
-        }
-
-        .back-btn:hover {
-            background: #00c9cc;
-            transform: scale(1.05);
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 15px;
-            }
-
-            .box {
-                padding: 25px;
-            }
-        }
-    </style>
+    <!-- Unified Stylesheet -->
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>More <span>About Me</span></h1>
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <div class="logo-container">
+            <a href="index.html" class="logo">
+                <i class='bx bx-code-curly' style="color: var(--accent-cyan); font-size: 1.6rem;"></i>
+                Ranjith<span>.dev</span>
+            </a>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#project">Projects</a>
+            <a href="index.html#education">Education</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="index.html" class="nav-cta">← Back to Portfolio</a>
+        </nav>
+
+        <button class="menu-icon" id="menu-icon" aria-label="Toggle navigation menu">
+            <i class='bx bx-menu'></i>
+        </button>
     </header>
 
-    <div class="container">
-
-        <!-- About Me -->
-        <div class="box">
-            <h2><i class='bx bx-user'></i> About Me</h2>
-
-            <p>
-                Hi, I am Ranjith Kumar, an enthusiastic and dedicated aspiring Full Stack Web Developer
-                currently studying at Freshworks Academy.
-            </p>
-
-            <p>
-                I come from a simple and hardworking family. My father is a fruit seller,
-                and my mother is a tailor. Their dedication and continuous hard work
-                inspire me to stay focused and responsible. I also have a sister who is
-                currently studying in 12th standard. My family is my biggest motivation,
-                and I work hard to make them proud.
-            </p>
-
-            <p>
-                From a young age, I was curious about how computers work and how websites
-                and applications are created. That curiosity gradually turned into a strong
-                passion for technology and software development.
-            </p>
-
-            <p>
-                I am passionate about building user-friendly and responsive web applications.
-                Every day, I focus on improving my technical knowledge and practical skills
-                to build a strong career in the IT industry.
+    <main class="about-page-container">
+        <!-- Hero Box -->
+        <div class="about-hero-card reveal active">
+            <span class="heading-sub">// GET TO KNOW ME</span>
+            <h1 style="font-size: clamp(1.8rem, 5vw, 2.5rem); margin-bottom: 1rem;">
+                My Journey, <span class="gradient-text">Values & Vision</span>
+            </h1>
+            <p style="font-size: clamp(0.95rem, 2.5vw, 1.05rem); color: var(--text-secondary); line-height: 1.8;">
+                Hi, I am <strong>Ranjith Kumar</strong>, an enthusiastic and dedicated Full Stack Web Developer currently honing my practical skills and building modern software at <strong>Freshworks Academy</strong>.
             </p>
         </div>
 
-        <!-- Education -->
-        <div class="box">
-            <h2><i class='bx bx-book'></i> Education Background</h2>
-
-            <h3>10th Standard</h3>
+        <!-- Personal Story -->
+        <div class="about-section-box reveal active">
+            <h2><i class='bx bx-user-pin'></i> Personal Story & Motivation</h2>
             <p>
-                I completed my 10th standard at Government Higher Secondary School (GHSS),
-                where I built a strong academic foundation and developed discipline and consistency.
+                I come from a simple, hardworking, and values-driven family. My father is a fruit seller, and my mother is a tailor. Watching their relentless dedication, honesty, and continuous hard work every single day inspires me to stay grounded, resilient, and deeply focused on achieving excellence.
             </p>
-
-            <h3>12th Standard (Bio-Maths Group)</h3>
             <p>
-                I completed my Higher Secondary education in the Bio-Maths group at GHSS.
-                I scored 90% in Tamil and 82% in Mathematics. Tamil improved my communication
-                skills, while Mathematics strengthened my logical thinking and problem-solving ability.
-                Even though my stream was Biology and Mathematics, I always had a strong interest in computers.
+                I have a younger sister who is currently studying in 12th standard. My family is my biggest source of motivation, and I am driven by the purpose of making them proud and providing them with a secure and happy life.
             </p>
-
-            <h3>Full Stack Web Development – Freshworks Academy</h3>
             <p>
-                Currently, I am pursuing Full Stack Web Development training at Freshworks Academy.
-                I have hands-on experience in HTML, CSS, and JavaScript for front-end development,
-                and Python for back-end development. I also have experience working with PostgreSQL databases.
-            </p>
-
-            <p>
-                Through real-time projects, I have learned responsive design, database integration,
-                and complete web application development from front end to back end.
+                From an early age, I possessed an innate curiosity about how computers operate and how interactive web applications function behind the screen. That curiosity evolved into a relentless passion for modern web technologies and software engineering.
             </p>
         </div>
 
-        <!-- My Interests -->
-        <div class="box">
-            <h2><i class='bx bx-heart'></i> My Interests</h2>
+        <!-- Education Background -->
+        <div class="about-section-box reveal active">
+            <h2><i class='bx bx-graduation'></i> Education & Skill Development</h2>
 
+            <h3><i class='bx bx-code-alt' style="color: var(--accent-cyan);"></i> Full Stack Web Development – Freshworks Academy</h3>
             <p>
-                Apart from coding, I have personal interests that help me stay balanced and motivated.
+                Currently mastering full-cycle web application development. I develop interactive frontends using HTML5, CSS3, JavaScript (ES6+), and React.js, along with scalable backend APIs in Python and FastAPI, supported by PostgreSQL databases. Through hands-on assignments and real-time projects, I focus on responsive UI architectures, clean code principles, and efficient data handling.
             </p>
 
-            <h3><i class='bx bx-cricket-ball'></i> Cricket</h3>
+            <h3><i class='bx bx-book' style="color: var(--accent-cyan);"></i> Higher Secondary Education (12th Bio-Maths) – GHSS</h3>
             <p>
-                I enjoy playing and watching cricket. It keeps me active and teaches teamwork,
-                discipline, focus, and strategy — qualities that also help in software development.
+                Completed Higher Secondary education in the Bio-Maths stream at Government Higher Secondary School. Scored <strong>90% in Tamil</strong> and <strong>82% in Mathematics</strong>. Tamil enhanced my communication clarity and cultural appreciation, while Mathematics built a strong analytical mindset and problem-solving rigor that directly supports algorithmic coding.
             </p>
 
-            <h3><i class='bx bx-bowl-hot'></i> Cooking</h3>
+            <h3><i class='bx bx-award' style="color: var(--accent-cyan);"></i> Secondary School Education (10th Standard) – GHSS</h3>
             <p>
-                I love cooking and trying new recipes. Cooking improves my creativity,
-                patience, and attention to detail, similar to writing and debugging code.
-            </p>
-
-            <h3><i class='bx bx-laptop'></i> Learning New Technologies</h3>
-            <p>
-                I am always interested in learning new tools and technologies related to web development.
-                Continuous learning helps me grow and stay updated in the IT field.
+                Completed 10th standard at GHSS, where I developed fundamental discipline, consistency, and early technical curiosity.
             </p>
         </div>
 
-        <!-- Goals -->
-        <div class="box">
-            <h2><i class='bx bx-target-lock'></i> My Goals</h2>
-
-            <h3>Short-Term Goal</h3>
+        <!-- Interests & Hobbies -->
+        <div class="about-section-box reveal active">
+            <h2><i class='bx bx-heart-circle'></i> Interests & Personal Pursuits</h2>
             <p>
-                My short-term goal is to secure a good job in a reputed IT company as a Full Stack Developer.
-                I want to gain strong practical knowledge, improve my technical skills,
-                and work on real-world projects to understand industry standards.
+                Beyond coding and building applications, I pursue activities that keep me mentally sharp, balanced, and energized:
             </p>
 
-            <h3>Long-Term Goal</h3>
+            <div class="interest-grid">
+                <div class="interest-card">
+                    <h4><i class='bx bx-cricket-ball'></i> Cricket</h4>
+                    <p>Playing and analyzing cricket sharpens my team coordination, strategic thinking, patience under pressure, and mental agility.</p>
+                </div>
+
+                <div class="interest-card">
+                    <h4><i class='bx bx-restaurant'></i> Culinary Art & Cooking</h4>
+                    <p>Cooking allows me to experiment with creativity and timing. Much like writing clean code, cooking requires precision and attention to detail.</p>
+                </div>
+
+                <div class="interest-card">
+                    <h4><i class='bx bx-laptop'></i> Emerging Tech & UI Trends</h4>
+                    <p>I continuously explore new web frameworks, developer tools, and design aesthetics to stay at the cutting edge of tech.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Goals & Vision -->
+        <div class="about-section-box reveal active">
+            <h2><i class='bx bx-target-lock'></i> Career Goals & Aspirations</h2>
+
+            <h3><i class='bx bx-trending-up' style="color: var(--accent-cyan);"></i> Short-Term Goal</h3>
             <p>
-                My long-term goal is to become a highly skilled and successful Full Stack Developer.
-                I want to support my family and provide them with a comfortable and secure life.
-                One of my biggest dreams is to build my own house and make my family proud
-                through my dedication and hard work.
+                To launch my career as a Full Stack Web Developer in an innovative, growth-oriented technology organization where I can deliver impactful software, collaborate with experienced engineers, and continuously elevate my technical craftsmanship.
+            </p>
+
+            <h3><i class='bx bx-star' style="color: var(--accent-cyan);"></i> Long-Term Goal</h3>
+            <p>
+                To evolve into a seasoned, high-impact Lead Full Stack Developer who architects enterprise-grade software. On a personal level, I aspire to build a beautiful home for my parents and provide my family with lasting security and pride through my dedication.
             </p>
         </div>
 
-        <!-- Conclusion -->
-        <div class="box">
-            <h2><i class='bx bx-check-circle'></i> Conclusion</h2>
-            <p>
-                I am a self-motivated and hardworking individual who is passionate about technology.
-                I am always ready to learn, improve, and take on new challenges
-                to grow both personally and professionally.
+        <!-- Conclusion & CTA -->
+        <div class="about-section-box reveal active" style="text-align: center; padding: clamp(1.8rem, 4vw, 3rem) clamp(1rem, 3vw, 2rem);">
+            <h2 style="justify-content: center; border-bottom: none; margin-bottom: 0.5rem;">
+                <i class='bx bx-check-shield'></i> Ready to Create Value
+            </h2>
+            <p style="max-width: 650px; margin: 0 auto 1.8rem; color: var(--text-secondary);">
+                I am proactive, hardworking, and deeply eager to take on challenging real-world problems. Let's connect and build something extraordinary!
             </p>
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <a href="index.html" class="btn-primary">
+                    <i class='bx bx-arrow-back'></i> Back to Portfolio
+                </a>
+                <a href="index.html#contact" class="btn-secondary">
+                    <i class='bx bx-envelope'></i> Contact Me
+                </a>
+            </div>
         </div>
+    </main>
 
-        <a href="index.html" class="back-btn">← Back to Portfolio</a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>© 2026 <strong>Ranjith Kumar</strong>. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#project">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </footer>
 
-    </div>
-
+    <!-- Script for mobile menu -->
+    <script src="./index.js"></script>
 </body>
 
 </html>
